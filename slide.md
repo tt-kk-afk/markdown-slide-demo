@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: cute
+theme: uncover
 ---
 
 # Gemini CLIでGitHub Pagesでスライドを公開してみた話
