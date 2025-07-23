@@ -1,10 +1,6 @@
 ---
 marp: true
-theme: uncover
-
-<style>
-@import url('styles/table.css');
-</style>
+theme: default
 ---
 
 # Gemini CLIでGitHub Pagesでスライドを公開してみた話
