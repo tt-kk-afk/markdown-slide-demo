@@ -54,7 +54,7 @@ theme: default
 
 実際に公開したスライドがこちらです！
 
-**(ここに公開後のURLを記載)**
+**https://tt-kk-afk.github.io/markdown-slide-demo/**
 
 ![bg right:50%](https://marp.app/assets/marp.svg)
 

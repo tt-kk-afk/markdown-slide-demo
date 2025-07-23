@@ -3,6 +3,6 @@
 - [x] 1. Marpのセットアップ
 - [x] 2. スライドの構成案作成
 - [x] 3. スライドのコンテンツ作成
-- [ ] 4. GitHubリポジトリの準備
-- [ ] 5. MarpでHTMLを生成
-- [ ] 6. GitHub Pagesで公開
+- [x] 4. GitHubリポジトリの準備
+- [x] 5. MarpでHTMLを生成
+- [x] 6. GitHub Pagesで公開
