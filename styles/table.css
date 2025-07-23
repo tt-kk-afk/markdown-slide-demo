@@ -1,0 +1,11 @@
+/* styles/table.css */
+
+section table {
+  font-size: 0.8em; /* テーブル全体のフォントサイズを小さく */
+  line-height: 1.2; /* 行間を詰める */
+}
+
+section table th,
+section table td {
+  padding: 0.3em 0.5em; /* セル内の余白を調整 */
+}
