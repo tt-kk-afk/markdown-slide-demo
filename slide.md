@@ -1,6 +1,19 @@
 ---
 marp: true
 theme: default
+lang: ja
+style: |
+h1, h2, h3, h4, h5, h6, p {
+  word-break: auto-phrase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
 ---
 
 # Gemini CLIでGitHub Pagesでスライドを公開してみた話
