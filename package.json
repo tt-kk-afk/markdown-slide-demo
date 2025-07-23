@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:slide": "marp slide.md -o dist/index.html",
+    "build:slide": "marp --theme-set themes/cute.css slide.md -o dist/index.html",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],

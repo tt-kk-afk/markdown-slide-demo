@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: default
+theme: cute
 ---
 
 # Gemini CLIでGitHub Pagesでスライドを公開してみた話
@@ -68,7 +68,7 @@ theme: default
 
 **https://tt-kk-afk.github.io/markdown-slide-demo/**
 
-![bg right:50%](https://marp.app/assets/marp.svg)
+![width:50%](https://marp.app/assets/marp.svg)
 
 ---
 

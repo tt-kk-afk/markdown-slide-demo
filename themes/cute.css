@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+/* @theme cute */
+
+section {
+  background-color: #ffebee; /* 薄いピンク */
+  color: #424242; /* 濃いグレー */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section.marp-slide {
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
