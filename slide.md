@@ -64,14 +64,95 @@ style: |
 
 ---
 
-## 手順
+## 手順（全体像）
 
-1. **Marpのセットアップ**: `npm`でMarp CLIをインストール
-2. **スライドの構成案作成**: Geminiと相談して構成を決定
-3. **スライドのコンテンツ作成**: マークダウンでスライドを記述
-4. **GitHubリポジトリの準備**: `git init` など
-5. **MarpでHTMLを生成**: `marp`コマンドでHTML化
-6. **GitHub Pagesで公開**: `gh-pages`ブランチにpush
+今回は以下のステップでスライド作成から公開までを行いました。
+
+1.  Marpのセットアップ
+2.  スライドの構成案作成
+3.  スライドのコンテンツ作成
+4.  GitHubリポジトリの準備
+5.  MarpでHTMLを生成
+6.  GitHub Pagesで公開
+
+---
+
+## 手順1: Marpのセットアップ
+
+- Marp CLIをnpmでインストールします。
+- `package.json`を作成し、開発依存としてMarp CLIを追加しました。
+
+```bash
+npm init -y
+npm install --save-dev @marp-team/marp-cli
+```
+
+## 手順2: スライドの構成案作成
+
+- Geminiと対話しながら、5分間の発表に合わせたスライドの構成案を検討しました。
+
+---
+
+## 手順3: スライドのコンテンツ作成
+
+- 決定した構成案に基づき、各スライドの内容をMarkdown形式で記述しました。
+- `slide.md`というファイル名で作成し、Marpの記法（`---`でスライド区切りなど）を使用しました。
+
+![alt text](image.png)
+
+---
+
+## 手順4: GitHubリポジトリの準備
+
+- ローカルディレクトリをGitリポジトリとして初期化し、一旦コミット。
+- リモートリポジトリを登録、push
+
+```bash
+git remote add origin https://github.com/tt-kk-afk/markdown-slide-demo.git
+git push -u origin main
+```
+
+---
+
+## 手順5: MarpでHTMLを生成
+
+- MarkdownファイルからHTML形式のスライドを生成しました。
+- `package.json`にビルドスクリプトを追加し、`npm run build:slide`で実行できるようにしました。
+
+```json
+// package.json
+"scripts": {
+  "build:slide": "marp slide.md -o dist/index.html"
+}
+```
+
+```bash
+npm run build:slide
+```
+![alt text](image-1.png)
+
+---
+
+## 手順6: GitHub Pagesで公開
+
+- `gh-pages`パッケージを使用して、生成したHTMLファイルをGitHub Pagesにデプロイしました。
+- `gh-pages`は、指定したディレクトリの内容を`gh-pages`ブランチにプッシュし、GitHub Pagesとして公開する便利なツールです。
+
+```bash
+npm install --save-dev gh-pages
+```
+
+```json
+// package.json
+"scripts": {
+  "deploy": "gh-pages -d dist"
+}
+```
+
+```bash
+npm run deploy
+```
+![alt text](image-2.png)
 
 ---
 
@@ -87,9 +168,9 @@ style: |
 
 ## ハマったところ・工夫したところ
 
-- **Gemini CLIへの指示**
-  - 曖昧な指示より、具体的なステップを提示する方がスムーズ
-  - 「〇〇して」より「〇〇するために△△のコマンドを実行して」
+- **AIとの協調作業の重要性**
+  - AIは指示に基づいて実行するが、完璧ではない
+  - ユーザーからの具体的なフィードバックと修正指示が、より良い成果につながる
 - **デザイン調整の難しさ**
   - GUIツールに比べて、コードベースでのデザイン調整は試行錯誤が大変
 - **Gemini CLIの利便性**
