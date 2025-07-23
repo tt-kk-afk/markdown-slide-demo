@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:slide": "marp slide.md -o dist/index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build:pptx": "marp slide.md -o slide.pptx --pptx"
   },
   "keywords": [],
   "author": "",
